@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
   //directives: [ ROUTER_DIRECTIVES ]
 })
 export class AppComponent {
+  title: any;
 
 }
