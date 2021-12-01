@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
  selector: 'eventcard',
  templateUrl: './eventcard.component.html'
 })
+
 export class eventcardComponent {
 
 }
