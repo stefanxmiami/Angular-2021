@@ -1,5 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
-*{
-    margin: 0px;
-    padding: 0px;
+body {
+    font-family: 'Metropolis-Regular', "Segoe UI", Helvetica Neue, Helvetica, sans-serif;
+    background-color: gray;
+}
+.header-content .nav-menu .nav-item > a{
+    display: block;
+    line-height: 36px;
+    font-size: 16px;
+    transition: 0.15s;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+.black-bg .nav-menu .nav-item > a {
+    color: #ffffff;
+}    
+.header-content .nav-menu .nav-item > a {
+    display: block;
+    line-height: 36px;
+    font-size: 16px;
+    color: #000000;
+    transition: 0.15s;
+    cursor: pointer;
 }
