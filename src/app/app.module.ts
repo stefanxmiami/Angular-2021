@@ -15,7 +15,7 @@ import { paymentboxComponent } from '../_paymentbox/paymentboxcomponent';
     AppRoutingModule, 
     AuthModule],
   providers: [],
-  bootstrap: [AppComponent, eventcardComponent]
+  bootstrap: [AppComponent, eventcardComponent,paymentboxComponent]
 })
 export class AppModule {
 
