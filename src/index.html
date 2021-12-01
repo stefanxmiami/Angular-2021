@@ -39,7 +39,9 @@
               <a class="nav-link" href="javascript:void(0);"><i class="far fa-calendar-alt"></i>Events</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0);"><i class="far fa-address-card"></i>Log In</a>
+              <a class="nav-link"
+              [routerLink]="['login']"
+              routerLinkActive="active"><i class="far fa-address-card"></i>Log In</a>
           </li>
         </ul>
       </div>
@@ -57,7 +59,7 @@ function test(){
     var itemPosNewAnimTop = activeItemNewAnim.position();
     var itemPosNewAnimLeft = activeItemNewAnim.position();
     $(".hori-selector").css({
-      "top":itemPosNewAnimTop.top + "px", 
+      "top":itemPosNewAnimTop.top + "px",
       "left":itemPosNewAnimLeft.left + "px",
       "height": activeWidthNewAnimHeight + "px",
       "width": activeWidthNewAnimWidth + "px"
@@ -70,7 +72,7 @@ function test(){
       var itemPosNewAnimTop = $(this).position();
       var itemPosNewAnimLeft = $(this).position();
       $(".hori-selector").css({
-          "top":itemPosNewAnimTop.top + "px", 
+          "top":itemPosNewAnimTop.top + "px",
           "left":itemPosNewAnimLeft.left + "px",
           "height": activeWidthNewAnimHeight + "px",
           "width": activeWidthNewAnimWidth + "px"
@@ -87,19 +89,19 @@ function test(){
     $(".navbar-collapse").slideToggle(300);
     setTimeout(function(){ test(); });
     });
-    
-    
-    
+
+
+
     // --------------add active class-on another-page move----------
     jQuery(document).ready(function($){
     // Get current path and find target link
     var path = window.location.pathname.split("/").pop();
-    
+
     // Account for home page with empty path
     if ( path == '' ) {
       path = 'index.html';
     }
-    
+
     var target = $('#navbarSupportedContent ul li a[href="'+path+'"]');
     // Add active class to target link
     target.parent().addClass('active');
