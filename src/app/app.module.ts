@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { eventcardComponent } from './_eventcard/eventcard.component';
 import { AuthModule } from './auth/auth.module';
-import { paymentboxComponent } from '../_paymentbox/paymentboxcomponent';
+import { paymentboxComponent } from './_paymentbox/paymentboxcomponent';
 
 @NgModule({
   declarations: [AppComponent, 
