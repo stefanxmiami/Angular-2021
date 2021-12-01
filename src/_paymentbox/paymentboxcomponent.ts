@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
- selector: '',
- templateUrl: ''
+ selector: 'pm-payment',
+ templateUrl: './paymentboxcomponent.html'
 })
 
 export class paymentboxComponent {
-
+  
 }
