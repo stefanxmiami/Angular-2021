@@ -36,6 +36,7 @@ h5 {
   font-weight: 600; }
 
 .button {
+  font-weight: bold;
   color: #ffffff;
   background-color: #24cf5f;
   padding: 12px 25px;
@@ -175,19 +176,19 @@ input {
       align-items: center;
   height: 100vh;
   width: 100vw;
-  padding-top: 200px;
+  padding-top: 50px;
   z-index: 100; 
 overflow-y: auto;
 }
   .modal__container {
     display: -ms-flexbox;
-    display: flex;
-    max-width: 675px;
+    display: contents;
+    min-width: 675px;
     min-height: 400px;
-    margin-bottom: 125px;
     background-color: #ffffff;
     border-radius: 5px;
-    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.1); }
+    box-shadow: 3px 3px 15px #a0a0a0;
+  }
   .modal__featured {
     position: relative;
     -ms-flex: 1;
@@ -215,8 +216,8 @@ overflow-y: auto;
     -ms-transform: translateX(calc(-50% - 10px));
         transform: translateX(calc(-50% - 10px)); }
   .modal__content {
-    -ms-flex: 3;
-        flex: 3;
+    -ms-flex: 2;
+        flex: 2;
     padding: 40px 30px; }
 </style>
 
@@ -233,7 +234,7 @@ overflow-y: auto;
     </div>
     <div class="modal__content">
       <h2>Log In</h2>
-      <form #loginForm="ngForm" (ngSubmit)="onSubmit()">
+      <form #loginForm="ngForm" (ngSubmit)="onSubmit()" style="margin-top: 20px;">
         <ul class="form-list">
           <li class="form-list__row">
             <label>Username</label>
@@ -241,12 +242,10 @@ overflow-y: auto;
           </li>
           <li class="form-list__row">
             <label>Password</label>
-            <div id="input--cc" class="creditcard-icon">
               <input name="passwordField" [(ngModel)]="passwordField" type="password" placeholder="Password" required />
-            </div>
           </li>
           <li>
-            <button type="submit" class="button">Pay Now</button>
+            <button type="submit" class="button">Log In</button>
           </li>
         </ul>
       </form>
