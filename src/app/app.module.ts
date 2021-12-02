@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AuthGuard } from './guards/auth.guard';
+import { HomepageComponent } from './homepage/homepage.component';
 
 
 
@@ -22,7 +23,8 @@ import { AuthGuard } from './guards/auth.guard';
   PaymentBoxComponent,
     LoginComponent,
     EventsComponent,
-    DashboardComponent
+    DashboardComponent,
+    HomepageComponent
 ],
   imports: [ BrowserModule, AppRoutingModule, FormsModule, CommonModule],
   providers: [AuthGuard],
