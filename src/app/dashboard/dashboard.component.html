@@ -1,0 +1,9 @@
+<h1 *ngFor="let event of events" (click)="onClick(event)">
+  {{event.name}}
+</h1>
+
+<form #eventForm="ngForm" (ngSubmit)="onSubmit()" >
+  <input name="titleField" [(ngModel)]="titleField" type="text" placeholder="title" required>
+  <input name="descriptionField" [(ngModel)]="descriptionField" type="text" placeholder="description" required>
+  <button type="submit">Log In</button>
+</form>
