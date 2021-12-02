@@ -36,7 +36,6 @@ h5 {
   font-weight: 600; }
 
 .button {
-  font-weight: bold;
   color: #ffffff;
   background-color: #24cf5f;
   padding: 12px 25px;
@@ -159,35 +158,34 @@ input {
     top: 50%;
     width: 36px;
     height: 45px;
-    
     background-position: center;
     background-repeat: no-repeat;
     background-size: 36px;
     -ms-transform: translateY(-50%);
-        transform: translateY(-50%); 
-      }
+        transform: translateY(-50%); }
+
+
 
 .modal {
   display: -ms-flexbox;
-  display: flex;
+  display: contents;
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  height: 100vh;
-  width: 100vw;
-  padding-top: 50px;
+  
+
   z-index: 100; 
 overflow-y: auto;
 }
   .modal__container {
     display: -ms-flexbox;
-    display: contents;
+    display: flex;
     min-width: 675px;
     min-height: 400px;
     background-color: #ffffff;
     border-radius: 5px;
-    box-shadow: 3px 3px 15px #a0a0a0;
+    box-shadow: 3px 3px 15px #a0a0a0; 
   }
   .modal__featured {
     position: relative;
