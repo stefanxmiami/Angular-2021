@@ -13,6 +13,7 @@ import { CommonModule } from '@angular/common';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AuthGuard } from './guards/auth.guard';
 import { HomepageComponent } from './homepage/homepage.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
 
 
 
@@ -24,7 +25,8 @@ import { HomepageComponent } from './homepage/homepage.component';
     LoginComponent,
     EventsComponent,
     DashboardComponent,
-    HomepageComponent
+    HomepageComponent,
+    AboutusComponent
 ],
   imports: [ BrowserModule, AppRoutingModule, FormsModule, CommonModule],
   providers: [AuthGuard],
