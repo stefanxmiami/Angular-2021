@@ -1,7 +1,3 @@
-.u-section-1 {
-  background-image: url("images/de48adc90e604da81d3ff398ee982f4de4ad1f791381704a903c0c2ca8f4ce28ebb9b36f1be800a9037b02c2d4117ba5cde9c93e513a0eaba5ebe4_12802.jpg");
-  background-position: 50% 50%;
-}
 
 .u-section-1 .u-sheet-1 {
   min-height: 500px;
@@ -55,10 +51,6 @@
   min-height: 463px;
 }
 
-.u-section-2 .u-image-1 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("images/ocean-pollution-plastic.1567434951.jpg");
-  background-position: 50% 50%;
-}
 
 .u-section-2 .u-container-layout-1 {
   padding: 30px;
@@ -76,10 +68,6 @@
   margin-top: 20px;
 }
 
-.u-section-2 .u-image-2 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("images/CostofAir21_Mob_a.jpg");
-  background-position: 50% 50%;
-}
 
 .u-section-2 .u-container-layout-2 {
   padding: 30px;
@@ -97,10 +85,6 @@
   margin-top: 20px;
 }
 
-.u-section-2 .u-image-3 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("images/tree_sappling.jpg");
-  background-position: 50% 50%;
-}
 
 .u-section-2 .u-container-layout-3 {
   padding: 30px;
