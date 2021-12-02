@@ -139,7 +139,7 @@ body {
 }
 
 .radio.selected {
-    box-shadow: 0px 0px 0px 1px rgba(179, 5, 5, 0.4)
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.4)
 }
 
 .fit-image {
