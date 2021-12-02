@@ -62,7 +62,7 @@ body {
 }
 
 #heading1 {
-    color: #d53030;
+    color: #ffffff;
     font-size: 20px;
     padding-left: 10px
 }
@@ -135,7 +135,7 @@ body {
 }
 
 .radio:hover {
-    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.2)
+    box-shadow: 0px 0px 0px 1px rgba(39, 233, 0, 0.2)
 }
 
 .radio.selected {
