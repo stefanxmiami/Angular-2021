@@ -3,19 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { eventcardComponent } from './_eventcard/eventcard.component';
 import { AuthModule } from './auth/auth.module';
-import { paymentboxComponent } from './_paymentbox/paymentboxcomponent';
+import { NavbarComponent } from './_navbar/navbar/navbar.component';
+import { EventCardComponent } from './_eventCard/event-card/event-card.component';
+import { PaymentBoxComponent } from './_paymentBox/payment-box/payment-box.component';
 
 @NgModule({
-  declarations: [AppComponent, 
-    eventcardComponent,
-  paymentboxComponent],
-  imports: [ BrowserModule, 
-    AppRoutingModule, 
+  declarations: [AppComponent,
+  NavbarComponent,
+  EventCardComponent,
+  PaymentBoxComponent],
+  imports: [ BrowserModule,
+    AppRoutingModule,
     AuthModule],
   providers: [],
-  bootstrap: [AppComponent, eventcardComponent, paymentboxComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule {
 
