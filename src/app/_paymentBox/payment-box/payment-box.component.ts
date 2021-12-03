@@ -1,41 +1,40 @@
-import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, OnInit } from "@angular/core";
+import { Router } from "@angular/router";
 
 @Component({
-  selector: 'app-payment-box',
-  templateUrl: './payment-box.component.html',
-  styleUrls: ['./payment-box.component.css']
+  selector: "app-payment-box",
+  templateUrl: "./payment-box.component.html",
+  styleUrls: ["./payment-box.component.css"],
 })
 export class PaymentBoxComponent implements OnInit {
+  name = "admin";
+  card = "1111 1111 1111 1111";
+  dateMonth = "12";
+  dateYear = "21";
+  cvc = "111";
 
-  name = 'admin';
-  card = '1111 1111 1111 1111';
-  dateMonth = '12';
-  dateYear = '21';
-  cvc = '111';
+  nameField = "";
+  cardField = "";
+  dateMonthField = "";
+  dateYearField = "";
+  cvcField = "";
 
-  nameField = '';
-  cardField = '';
-  dateMonthField = '';
-  dateYearField = '';
-  cvcField = '';
+  constructor(private router: Router) {}
 
-  constructor(private router: Router) { }
-
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   onSubmit() {
-    if(this.name === this.nameField && this.card === this.cardField && this.dateMonth === this.dateMonthField
-      && this.dateYear === this.dateYearField && this.cvc === this.cvcField){
+    if (
+      this.name === this.nameField &&
+      this.card === this.cardField &&
+      this.dateMonth === this.dateMonthField &&
+      this.dateYear === this.dateYearField &&
+      this.cvc === this.cvcField
+    ) {
+      //return 5$
 
-        //return 5$
-
-      localStorage.setItem('authenticated', "true");
-      this.router.navigateByUrl('homepage');
+      localStorage.setItem("authenticated", "true");
+      this.router.navigateByUrl("homepage");
     }
-
   }
-
-
 }

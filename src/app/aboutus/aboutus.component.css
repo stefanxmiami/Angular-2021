@@ -7,7 +7,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -26,15 +28,16 @@ html {
 .about-section {
   padding: 50px;
   text-align: center;
-  background-color: #ffffff;
-  color: rgb(4, 0, 0);
+  background-color: #474e5d;
+  color: white;
 }
 
 .container {
   padding: 0 16px;
 }
 
-.container::after, .row::after {
+.container::after,
+.row::after {
   content: "";
   clear: both;
   display: table;
