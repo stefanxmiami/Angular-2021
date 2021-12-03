@@ -25,7 +25,7 @@ export class DashboardComponent implements OnInit {
   onSubmit() {
     const newEvent = {
       name: this.titleField,
-      description: this.descriptionField,
+      shortDescription: this.descriptionField,
       id: this.events.length + 1,
     };
     this.events.push(newEvent);

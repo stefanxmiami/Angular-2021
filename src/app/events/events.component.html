@@ -1,4 +1,4 @@
-<div *ngFor="let event of events">
+<div *ngFor="let event of events" [routerLink]="['/event',event.id]">
   <h1>{{ event.name }}</h1>
   <p>{{ event.shortDescription }}</p>
 </div>

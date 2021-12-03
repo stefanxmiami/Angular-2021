@@ -1,1 +1,5 @@
-<p>event-details works!</p>
+<div *ngIf="eventDetails">
+<h1>{{ eventDetails.name }}</h1>
+<p>{{ eventDetails.shortDescription }}</p>
+<app-payment-box></app-payment-box>
+</div>

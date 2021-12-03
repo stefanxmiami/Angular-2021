@@ -14,6 +14,7 @@ import { AuthGuard } from './guards/auth.guard';
 import { HomepageComponent } from './homepage/homepage.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { EventDetailsComponent } from './event-details/event-details.component';
+import { Router, RouterModule } from '@angular/router';
 
 
 
@@ -28,7 +29,7 @@ import { EventDetailsComponent } from './event-details/event-details.component';
     AboutusComponent,
     EventDetailsComponent
 ],
-  imports: [ BrowserModule, AppRoutingModule, FormsModule, CommonModule],
+  imports: [ BrowserModule, AppRoutingModule, FormsModule, CommonModule, RouterModule],
   providers: [AuthGuard],
   bootstrap: [AppComponent]
 })
