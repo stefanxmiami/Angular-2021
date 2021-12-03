@@ -29,9 +29,12 @@ export class PaymentBoxComponent implements OnInit {
     if(this.name === this.nameField && this.card === this.cardField && this.dateMonth === this.dateMonthField
       && this.dateYear === this.dateYearField && this.cvc === this.cvcField){
 
+        //return 5$
+
       localStorage.setItem('authenticated', "true");
       this.router.navigateByUrl('homepage');
     }
+
   }
 
 
