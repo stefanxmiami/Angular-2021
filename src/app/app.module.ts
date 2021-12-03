@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './_navbar/navbar/navbar.component';
-import { EventCardComponent } from './_eventCard/event-card/event-card.component';
 import { PaymentBoxComponent } from './_paymentBox/payment-box/payment-box.component';
 import { LoginComponent } from './login/login.component';
 import { EventsComponent } from './events/events.component';
@@ -14,19 +13,20 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { AuthGuard } from './guards/auth.guard';
 import { HomepageComponent } from './homepage/homepage.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
+import { EventDetailsComponent } from './event-details/event-details.component';
 
 
 
 @NgModule({
   declarations: [AppComponent,
   NavbarComponent,
-  EventCardComponent,
   PaymentBoxComponent,
     LoginComponent,
     EventsComponent,
     DashboardComponent,
     HomepageComponent,
-    AboutusComponent
+    AboutusComponent,
+    EventDetailsComponent
 ],
   imports: [ BrowserModule, AppRoutingModule, FormsModule, CommonModule],
   providers: [AuthGuard],
