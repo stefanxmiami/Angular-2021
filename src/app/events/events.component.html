@@ -1,4 +1,4 @@
-<div class = "row">
+<div class = "row" style="padding-top: 20px;">
   <div *ngFor="let event of events" [routerLink]="['/event',event.id]" class="card-group col-4">
   <div class="card">
     <img src={{events.picture}} class="card-img-top" alt="">
@@ -11,8 +11,5 @@
     </div>
   </div>
   </div>
-</div>
-<div>
-  <img src="../../assets/oPolution.jpg"/>
 </div>
 
