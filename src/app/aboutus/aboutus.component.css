@@ -28,8 +28,8 @@ html {
 .about-section {
   padding: 50px;
   text-align: center;
-  background-color: #474e5d;
-  color: white;
+  background-color: #fff;
+  color: black;
 }
 
 .container {
@@ -53,14 +53,14 @@ html {
   display: inline-block;
   padding: 8px;
   color: white;
-  background-color: #000;
+  background-color: #5865b6;
   text-align: center;
   cursor: pointer;
   width: 100%;
 }
 
 .button:hover {
-  background-color: #555;
+  background-color: #5162ce;
 }
 
 @media screen and (max-width: 650px) {
