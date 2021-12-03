@@ -1,5 +1,12 @@
-<div *ngIf="eventDetails">
-<h1>{{ eventDetails.name }}</h1>
-<p>{{ eventDetails.shortDescription }}</p>
-<app-payment-box></app-payment-box>
-</div>
+<div *ngIf="eventDetails" class="card-group" >
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">{{ eventDetails.name }}</h5>
+        <p class="card-text">{{ eventDetails.shortDescription }}</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+    <app-payment-box></app-payment-box>
+  </div>
