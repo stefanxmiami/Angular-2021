@@ -20,6 +20,7 @@ export class DashboardComponent implements OnInit {
 
   onClick(event: any) {
     this.events = this.events.filter((el: any) => el.id !== event.id);
+    this.eventsService.events = this.events.filter((el: any) => el.id !== event.id);
   }
 
   onSubmit() {
