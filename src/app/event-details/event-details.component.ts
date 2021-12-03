@@ -20,4 +20,8 @@ export class EventDetailsComponent implements OnInit {
     this.eventDetails = this.events.find((ev: any)=>ev.id === +id);
   }
 
+  increaseFunds(amount: number){
+    this.eventDetails.funds+=amount;
+  }
+
 }

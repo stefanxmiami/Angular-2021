@@ -1,5 +1,7 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, EventEmitter, OnInit, Output } from "@angular/core";
 import { Router } from "@angular/router";
+
+
 
 @Component({
   selector: "app-payment-box",
@@ -7,17 +9,22 @@ import { Router } from "@angular/router";
   styleUrls: ["./payment-box.component.css"],
 })
 export class PaymentBoxComponent implements OnInit {
+
+  @Output() onDonation = new EventEmitter<number>();
+
   name = "admin";
   card = "1111 1111 1111 1111";
   dateMonth = "12";
   dateYear = "21";
   cvc = "111";
 
+
   nameField = "";
   cardField = "";
   dateMonthField = "";
   dateYearField = "";
   cvcField = "";
+  fundsField = "";
 
   constructor(private router: Router) {}
 
@@ -32,9 +39,7 @@ export class PaymentBoxComponent implements OnInit {
       this.cvc === this.cvcField
     ) {
       //return 5$
-
-      localStorage.setItem("authenticated", "true");
-      this.router.navigateByUrl("homepage");
+        this.onDonation.emit(+this.fundsField);
     }
   }
 }
