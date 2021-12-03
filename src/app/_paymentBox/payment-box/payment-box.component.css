@@ -227,7 +227,7 @@ input:focus {
 }
 .modal__product {
   position: absolute;
-  top: 50%;
+  top: 25%;
   left: 50%;
   max-width: 85%;
   -ms-transform: translateX(calc(-50% - 10px));
