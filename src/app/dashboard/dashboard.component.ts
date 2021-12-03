@@ -28,6 +28,7 @@ export class DashboardComponent implements OnInit {
       name: this.titleField,
       shortDescription: this.descriptionField,
       id: this.events.length + 1,
+      funds: 0
     };
     this.events.push(newEvent);
   }
