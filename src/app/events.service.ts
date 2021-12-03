@@ -5,9 +5,9 @@ import { Injectable } from '@angular/core';
 })
 export class EventsService {
   events = [
-    { name: 'eventOne', id: 1, shortDescription: 'descr1' },
-    { name: 'eventTwo', id: 2, shortDescription: 'descr2' },
-    { name: 'eventThree', id: 3, shortDescription: 'descr3' },
+    { name: 'Blue Ocean', id: 1, shortDescription: 'Your gift to Blue Ocean Society for Marine Conservation helps protect marine life in the Gulf of Maine and beyond.' },
+    { name: 'Air Polution', id: 2, shortDescription: 'Please donate to an award-winning charity fighting air pollution. We need all the help we can get to fight gasoline and the huge impact it has on air.' },
+    { name: 'ShareTheMeal', id: 3, shortDescription: '1 in 9 children goes to bed hungry every night. Start giving with ShareTheMeal. Be part of the generation that ends hunger.' },
   ];
 
   constructor() {}
