@@ -5,7 +5,7 @@
         <p class="card-text">{{ eventDetails.shortDescription }}</p>
       </div>
       <div class="card-footer">
-        <small class="text-muted">Funds Raised: {{ eventDetails.funds }}</small>
+        <small class="text-muted">Funds Raised: {{ eventDetails.funds }}$</small>
       </div>
     </div>
     <app-payment-box (onDonation)="increaseFunds($event)"></app-payment-box>
