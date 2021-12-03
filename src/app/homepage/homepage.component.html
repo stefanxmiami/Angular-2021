@@ -24,10 +24,12 @@
                 </div>
                 <div class="col-lg-12">
                   <div class="white-button first-button scroll-to-section">
-                    <a href="#contact">Donate <i class="fab fa-apple"></i></a>
+                    <a   [routerLink]="['events']"
+                    routerLinkActive="active" >Donate <i class="fab fa-apple"></i></a>
                   </div>
                   <div class="white-button scroll-to-section">
-                    <a href="#contact"
+                    <a  [routerLink]="['events']"
+                    routerLinkActive="active"
                       >Big Donation <i class="fab fa-google-play"></i
                     ></a>
                   </div>
@@ -49,3 +51,4 @@
     </div>
   </div>
 </div>
+<app-events></app-events>

@@ -1,4 +1,5 @@
-<div *ngFor="let event of events" [routerLink]="['/event',event.id]" class="card-group" >
+<div class = "row">
+  <div *ngFor="let event of events" [routerLink]="['/event',event.id]" class="card-group col-4">
   <div class="card">
     <div class="card-body">
       <h5 class="card-title">{{ event.name }}</h5>
@@ -7,5 +8,6 @@
     <div class="card-footer">
       <small class="text-muted">Last updated 3 mins ago</small>
     </div>
+  </div>
   </div>
 </div>

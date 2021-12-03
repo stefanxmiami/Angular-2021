@@ -1,9 +1,3 @@
-<div *ngIf="eventDetails">
-<h1>{{ eventDetails.name }}</h1>
-<p>{{ eventDetails.shortDescription }}</p>
-<p>Funds Raised: {{ eventDetails.funds }}</p>
-<app-payment-box (onDonation)="increaseFunds($event)"></app-payment-box>
-</div>
 <div *ngIf="eventDetails" class="card-group" >
     <div class="card">
       <div class="card-body">
@@ -11,8 +5,8 @@
         <p class="card-text">{{ eventDetails.shortDescription }}</p>
       </div>
       <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
+        <small class="text-muted">Funds Raised: {{ eventDetails.funds }}</small>
       </div>
     </div>
-    <app-payment-box></app-payment-box>
+    <app-payment-box (onDonation)="increaseFunds($event)"></app-payment-box>
   </div>
