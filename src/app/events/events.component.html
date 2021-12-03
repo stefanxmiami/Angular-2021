@@ -1,7 +1,7 @@
 <div class = "row">
   <div *ngFor="let event of events" [routerLink]="['/event',event.id]" class="card-group col-4">
   <div class="card">
-    <img src="{{event.picture}}" class="card-img-top" alt="">
+    <img src="" class="card-img-top" alt="">{{event.picture}}</img>
     <div class="card-body">
       <h5 class="card-title">{{ event.name }}</h5>
       <p class="card-text">{{ event.shortDescription }}</p>
